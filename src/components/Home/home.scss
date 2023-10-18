@@ -1,0 +1,296 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+    .cube {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      animation: spin 8s infinite linear;
+      position: fixed;
+      bottom: 100px;
+      right: 100px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #593F62, #8e4ca4);
+        }
+      }
+    }
+  
+    .cubeX {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      position: fixed;
+      bottom: 290px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: rgb(48, 48, 79);
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4d4745, #31508f);
+        }
+      }
+    }
+  
+    .cubeF {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      position: fixed;
+      bottom: 410px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+      }
+    }
+  
+    .cubeL {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      position: fixed;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      bottom: 530px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+      }
+    }
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 1;
+  
+    .option {
+      display: inline-block;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #6eff4a;
+      color: white;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease-in;
+  
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+  .section-padding1 {
+    background: linear-gradient(5deg, #F08CAE, #f1467f);
+    height: 1000px; 
+
+  }
+  .section-padding2 {
+    background: linear-gradient(10deg, #FECEA8, #f3a05c);
+    width: auto;
+    height: 1000px; 
+  }
+  .section-padding3 {
+    background: linear-gradient(15deg, #99B898, #7ed27b);
+    width: auto;
+    height: 1000px;
+  }
+  .slideContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+  .slider{
+    max-width: 1000px; /* Adjust the max width as needed */
+    .img{
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
+  .card{
+    background: linear-gradient(5deg, #F08CAE, #f1467f);
+    width: auto; /* Reset the width property to 'auto' */
+    .button{
+        /* Estilos específicos para el botón dentro de la tarjeta */
+      background-color: #007bff; /* Color de fondo azul, puedes cambiarlo */
+      color: #fff; /* Color del texto blanco, puedes cambiarlo */
+      border: none; /* Quita el borde del botón */
+      padding: 8px 16px; /* Ajusta el espaciado interno del botón */
+      border-radius: 4px; /* Agrega bordes redondeados */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      font-size: 14px; /* Tamaño de fuente */
+    }
+  }
+
+  .cardMedia-post{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+
+    
+  }
+
+
+  .card .button:hover {
+    
+    background-color: #0056b3; /* Cambia el color de fondo en hover */
+  }
+
+  

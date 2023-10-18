@@ -1,0 +1,245 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+    .cube {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      animation: spin 8s infinite linear;
+      position: fixed;
+      bottom: 100px;
+      right: 100px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #F25022, #FFB900);
+        }
+      }
+    }
+  
+    .cubeX {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      position: fixed;
+      bottom: 290px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #AAB8C2, #657786);
+        }
+      }
+    }
+  
+    .cubeF {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      position: fixed;
+      bottom: 410px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #4267B2, #7ea5fa);
+        }
+      }
+    }
+  
+    .cubeL {
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+      position: fixed;
+      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+      bottom: 530px;
+      right: 130px;
+  
+      div {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+  
+        &.front {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.back {
+          transform: translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.top {
+          transform: rotateX(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.bottom {
+          transform: rotateX(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.left {
+          transform: rotateY(90deg) translateZ(50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+  
+        &.right {
+          transform: rotateY(90deg) translateZ(-50px);
+          background: linear-gradient(45deg, #0e76a8, #007dbb);
+        }
+      }
+    }
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 1;
+  
+    .option {
+      display: inline-block;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #6eff4a;
+      color: white;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease-in;
+  
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+  .section-padding1 {
+    background-color: black;
+  }
+  .section-padding2 {
+    background-color: rgb(249, 0, 0);
+  }
+  .section-padding3 {
+    background-color: rgb(255, 231, 53);
+  }
+  

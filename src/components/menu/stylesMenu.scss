@@ -1,0 +1,137 @@
+/* Estilos generales para el cuerpo y el contenedor */
+body {
+    margin: 0px 20px;
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    width: 45%;
+    height: 45%;
+  }
+  
+  /* Estilos para el menú */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(200, 197, 197);
+    padding: 0px 20px;
+    height: 70px;
+    position: fixed; /* Mantén el menú fijo en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  }
+  
+  .navbar-toggle {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 25%;
+    z-index: 1;
+  }
+  
+  .logo {
+    max-height: 65px;
+    margin: 0px 20px;
+  }
+  
+  /* Estilos para las opciones del menú */
+  .navbar-options {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .navbar-options li {
+    margin: 15px;
+  }
+  
+  .navbar-options a {
+    text-decoration: solid;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(3, 3, 144);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-options a:hover {
+    color: rgb(65, 65, 81);
+  }
+  
+  .navbar-options a:active {
+    color: rgb(86, 50, 50);
+    font-weight: 700;
+  }
+  
+  /* Estilos para el avatar */
+  .avatar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar-container img.avatar {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #060606;
+    margin-left: 20px;
+  }
+  
+  /* Estilos para el botón "Flex" */
+  .flex-button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+   .navbar-options-icon-mode {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 103, 103, 0.594);
+    position: fixed; 
+    top: 300px; 
+    transition: left 0.3s;
+    border-radius: 25%;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .iconM{
+    padding: 10px;
+    text-align: center;
+    img{
+        max-width: 20px;
+      }
+  }
+  
+  .navbar-options-icon-mode .icon {
+    padding: 10px;
+    text-align: center;
+  
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 400px;
+      color: black;
+      padding: 5px 10px;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        color: rgb(40, 40, 53);
+      }
+  
+      &:active {
+        color: rgb(86, 50, 50);
+        font-weight: 700;
+      }
+    } 
+  }
