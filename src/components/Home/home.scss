@@ -1,4 +1,5 @@
-.loader {
+.home {
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,182 +23,37 @@
   
         &.front {
           transform: translateZ(50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
   
         &.back {
           transform: translateZ(50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
   
         &.top {
           transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
   
         &.bottom {
           transform: rotateX(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
   
         &.left {
           transform: rotateY(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
   
         &.right {
           transform: rotateY(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #593F62, #8e4ca4);
-        }
-      }
-    }
-  
-    .cubeX {
-      width: 60px;
-      height: 60px;
-      transform-style: preserve-3d;
-      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
-      position: fixed;
-      bottom: 290px;
-      right: 130px;
-  
-      div {
-        position: absolute;
-        background-color: rgb(48, 48, 79);
-        width: 100px;
-        height: 100px;
-        opacity: 0.8;
-  
-        &.front {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-
-        }
-  
-        &.back {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-        }
-  
-        &.top {
-          transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-        }
-  
-        &.bottom {
-          transform: rotateX(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-        }
-  
-        &.left {
-          transform: rotateY(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-        }
-  
-        &.right {
-          transform: rotateY(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #4d4745, #31508f);
-        }
-      }
-    }
-  
-    .cubeF {
-      width: 60px;
-      height: 60px;
-      transform-style: preserve-3d;
-      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
-      position: fixed;
-      bottom: 410px;
-      right: 130px;
-  
-      div {
-        position: absolute;
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-        opacity: 0.5;
-  
-        &.front {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-  
-        &.back {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-  
-        &.top {
-          transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-  
-        &.bottom {
-          transform: rotateX(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-  
-        &.left {
-          transform: rotateY(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-  
-        &.right {
-          transform: rotateY(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #4267B2, #7ea5fa);
-        }
-      }
-    }
-  
-    .cubeL {
-      width: 60px;
-      height: 60px;
-      transform-style: preserve-3d;
-      position: fixed;
-      transform: rotateX(-20deg) rotateY(-30deg) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
-      bottom: 530px;
-      right: 130px;
-  
-      div {
-        position: absolute;
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-        opacity: 0.5;
-  
-        &.front {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
-        }
-  
-        &.back {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
-        }
-  
-        &.top {
-          transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
-        }
-  
-        &.bottom {
-          transform: rotateX(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
-        }
-  
-        &.left {
-          transform: rotateY(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
-        }
-  
-        &.right {
-          transform: rotateY(90deg) translateZ(-50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
+          background: linear-gradient(45deg, #06014e, #1d12b8);
         }
       }
     }
   }
-  
+
   .options {
     display: none;
     position: absolute;
@@ -235,62 +91,134 @@
   }
 
   .section-padding1 {
-    background: linear-gradient(5deg, #F08CAE, #f1467f);
+    background:  #2329667c;
     height: 1000px; 
 
   }
   .section-padding2 {
-    background: linear-gradient(10deg, #FECEA8, #f3a05c);
+    background:  #2329667c;
     width: auto;
     height: 1000px; 
   }
   .section-padding3 {
-    background: linear-gradient(15deg, #99B898, #7ed27b);
+    background:  #2329667c;
     width: auto;
     height: 1000px;
+    
   }
   .slideContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    margin-top: 80px;
+    width: 1160px;
+    height: 530px;
+    background-color: #d3a2b300;
+    text-align: center;
   }
   .slider{
-    max-width: 1000px; /* Adjust the max width as needed */
+    max-width: 650px;
     .img{
       justify-content: center;
       align-items: center;
     }
     
   }
-  .card{
-    background: linear-gradient(5deg, #F08CAE, #f1467f);
-    width: auto; /* Reset the width property to 'auto' */
-    .button{
-        /* Estilos específicos para el botón dentro de la tarjeta */
-      background-color: #007bff; /* Color de fondo azul, puedes cambiarlo */
-      color: #fff; /* Color del texto blanco, puedes cambiarlo */
-      border: none; /* Quita el borde del botón */
-      padding: 8px 16px; /* Ajusta el espaciado interno del botón */
-      border-radius: 4px; /* Agrega bordes redondeados */
-      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-      font-size: 14px; /* Tamaño de fuente */
-    }
+  .card-table{ 
+    background-color: #234c667c;
+    align-items: center;
+   
   }
-
   .cardMedia-post{
+    object-fit: contain;
     justify-content: center;
     align-items: center;
-    display: block;
-    margin: 0 auto;
-
-    
+    display: block;   
+    max-width: 650px;
+    max-height: 350px;
+  }
+  .CardContent{
+    background-color: #234c667c;
   }
 
 
   .card .button:hover {
-    
-    background-color: #0056b3; /* Cambia el color de fondo en hover */
+    background-color: #0056b3;
+    color: #fff; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 14px; 
   }
+
+  .modal-slide {
+    position: fixed;
+    width: 10px;
+    height: 30px;
+    display: flex;
+    .Box-slide {
+      position: absolute;
+      top: 20%;
+      left: 20%;    
+      background-color: #234c66;
+      padding: 10px;
+      max-width: 550px;
+      margin-left: 400px;
+      img{
+        width: 500px;
+        height: 300px;
+      }
+
+    }
+  }
+  .modal-service-info{
+    text-align: center;
+  }
+  .button-fav-group{
+    background-color: #234c66;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .Table-fav {
+    border-bottom: 2px solid #E0E0E0;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    align-items: center;
+    justify-content: center;
+
+  
+    tr{
+      display: block;
+      padding: 8px;
+      text-align: center;
+      
+      justify-content: center;
+      
+    } 
+    td {  
+      border-top:2px solid #E0E0E0;
+      padding: 8px;
+      
+      justify-content: center;
+    }
+    th{
+      text-align: center;
+      color:#4d4745;
+      
+      justify-content: center;
+    }
+
+  }
+  .table-image {
+    width: 250px; 
+    height: 250px; 
+  }
+  
+  
 
   

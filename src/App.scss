@@ -1,4 +1,4 @@
-.loader {
+/* .loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,17 +166,17 @@
   
         &.front {
           transform: translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
+          background: linear-gradient(45deg, #0e76a8, #bb6a00);
         }
   
         &.back {
           transform: translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
+          background: linear-gradient(45deg, #0e76a8, #bb6a00);
         }
   
         &.top {
           transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg, #0e76a8, #007dbb);
+          background: linear-gradient(45deg, #0e76a8, #bb6a00);
         }
   
         &.bottom {
@@ -242,4 +242,4 @@
   .section-padding3 {
     background-color: rgb(255, 231, 53);
   }
-  
+   */
