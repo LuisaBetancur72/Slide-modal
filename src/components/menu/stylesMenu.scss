@@ -1,7 +1,6 @@
 /* Estilos generales para el cuerpo y el contenedor */
 body {
-    margin: 0px 20px;
-    padding: 0px 20px;
+   
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -135,3 +134,11 @@ body {
       }
     } 
   }
+.Login{
+    text-decoration: solid;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(3, 3, 144);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}

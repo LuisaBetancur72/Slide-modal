@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'; 
 import './stylesMenu.scss';
 import Logo from '../../assets/images/logo.png';
 import Avatar from '../../assets/images/avatar.png';
@@ -62,20 +63,25 @@ class Navbar extends Component {
         {!isIconMode && (
           <ul className={`navbar-options ${isMenuOpen ? 'active' : ''}`}>
             <li>
-              <a href="#Flexbox" onClick={this.toggleIconMode} className="flex-button">
+              <Link to="/Flexbox" onClick={this.toggleIconMode} className="flex-button">
                 Flexbox
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li>
-              <a href="#Products">Products</a>
+              <Link to="/Products">Products</Link>
             </li>
           </ul>
         )}
 
-        <div className="avatar-container">
+            <div className="avatar-container">
+              <Link to="/login" onClick={this.handleToggleMenu} className="login-link" target="_blank">
+                <div className='Login'>
+                  <p>Login</p>
+                </div>
+              </Link>
           <img src={Avatar} className="avatar" alt="Foto de perfil" />
         </div>
       </div>
@@ -84,3 +90,6 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
+
+

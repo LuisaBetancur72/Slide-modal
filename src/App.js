@@ -1,32 +1,25 @@
-import React, { useState } from 'react';
-import './App.scss';
-import Cube from './components/cube/cube';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Menu from './components/menu/menu';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-
 import Home from './components/Home/home.js';
-
-
 import Facebook from './components/Face/facebook.js';
 import Instagram from './components/Insta/instagram.js';
 import Twitter from './components/twitt/twitter';
+import Login from './components/login/login';
 
 function App() {
-  
-
   return (
-    
     <Router>
-      
       <div className="App">
-        <Menu/>
+        <Menu />
       </div>
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/facebook" element={<Facebook />} />
-          <Route path="/instagram" element={<Instagram />} />
-          <Route path="/twitter" element={<Twitter />} />
-        </Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/facebook" element={<Facebook />} />
+        <Route path="/instagram" element={<Instagram />} />
+        <Route path="/twitter" element={<Twitter />} />
+        <Route path="/login" element={<Login />} /> 
+      </Routes>
     </Router>
   );
 }
