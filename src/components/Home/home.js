@@ -32,40 +32,20 @@ const settingsRTL = {
 function Home() {
   const post = [
     {
-      Id: "1",
-      title: "dalia",
-      subtitle: "campo de dalias ",
-      description:
-        "científicamente conocidas como Dahlia, son plantas herbáceas perennes que se caracterizan por sus atractivas y variadas flores. Estas flores son originarias de América Central y México",
-      Create_at: "11/10/23",
-      avatar: Photo27,
+      Id: "1", title: "dalia",subtitle: "campo de dalias ",description:"científicamente conocidas como Dahlia, son plantas herbáceas perennes que se caracterizan por sus atractivas y variadas flores. Estas flores son originarias de América Central y México",
+      Create_at: "11/10/23", avatar: Photo27,
     },
     {
-      Id: "2",
-      title: "Oceano",
-      subtitle: "Oceano atlantico ",
-      description:
-        " es el segundo océano más grande del mundo, después del Océano Pacífico. Se extiende entre América al oeste y Europa y África al este,",
-      Create_at: "11/10/23",
-      avatar: Photo28,
+      Id: "2",title: "Oceano",subtitle: "Oceano atlantico ",description:" es el segundo océano más grande del mundo, después del Océano Pacífico. Se extiende entre América al oeste y Europa y África al este,",
+      Create_at: "11/10/23",avatar: Photo28,
     },
     {
-      Id: "3",
-      title: "Faro",
-      subtitle: "Francia",
-      description:
-        "Francia cuenta con una gran cantidad de faros impresionantes a lo largo de su extensa costa, cada uno con su propio carácter y belleza. Uno de los faros más icónicos y conocidos de Francia es el Faro de Cordouan.",
-      Create_at: "11/10/23",
-      avatar: Photo29,
+      Id: "3",title: "Faro",subtitle: "Francia",description:"Francia cuenta con una gran cantidad de faros impresionantes a lo largo de su extensa costa, cada uno con su propio carácter y belleza. Uno de los faros más icónicos y conocidos de Francia es el Faro de Cordouan.",
+      Create_at: "11/10/23",avatar: Photo29,
     },
     {
-      Id: "4",
-      title: "Atardecer",
-      subtitle: "Atardecer en las playas Tijuana ",
-      description:
-        "ubicadas en Baja California, México, son verdaderamente impresionantes y ofrecen una experiencia única para los visitantes",
-      Create_at: "11/10/23",
-      avatar: Photo30,
+      Id: "4",title: "Atardecer",subtitle: "Atardecer en las playas Tijuana ",description:"ubicadas en Baja California, México, son verdaderamente impresionantes y ofrecen una experiencia única para los visitantes",
+      Create_at: "11/10/23",avatar: Photo30,
     },
   ];
 
@@ -91,12 +71,10 @@ function Home() {
       }
     }
   };
-
   const handleCloseModal = () => {
     setSelectedposts(null);
     setModalOpen(false);
   };
-
   const handleSectionClick = (sectionId) => {
     setSelectedSection(sectionId);
   };
