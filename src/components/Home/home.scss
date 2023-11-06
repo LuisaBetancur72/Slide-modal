@@ -1,5 +1,4 @@
 .home {
-  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,8 +6,8 @@
     flex-direction: column;
   
     .cube {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       transform-style: preserve-3d;
       animation: spin 8s infinite linear;
       position: fixed;
@@ -92,19 +91,23 @@
   }
 
   .section-padding1 {
-    background:  #2329667c;
-    height: 1000px; 
+    background:  #b352997c;
+    height: 800px;
+    margin: 10px;
+    width: 1200px;
 
   }
   .section-padding2 {
-    background:  #2329667c;
-    width: auto;
-    height: 1000px; 
+    margin: 10px;
+    background:  #b352997c;
+    width: 1200px;
+    height: 900px; 
   }
   .section-padding3 {
-    background:  #2329667c;
-    width: auto;
-    height: 1000px;
+    margin: 10px;
+    background:  #b352997c;
+    width: 1200px;
+    height: 900px;
     
   }
   .slideContainer{
@@ -116,9 +119,11 @@
     height: 530px;
     background-color: #d3a2b300;
     text-align: center;
+    font-weight: bold;
   }
   .slider{
     max-width: 650px;
+    font-weight: bold;
     .img{
       justify-content: center;
       align-items: center;
@@ -139,10 +144,9 @@
     max-height: 350px;
   }
   .CardContent{
-    background-color: #234c667c;
+    background-color: #5c2366b9;
+    
   }
-
-
   .card .button:hover {
     background-color: #0056b3;
     color: #fff; 
@@ -150,7 +154,8 @@
     padding: 8px 16px; 
     border-radius: 4px; 
     cursor: pointer; 
-    font-size: 14px; 
+    font-size: 14px;
+    
   }
 
   .modal-slide {
@@ -158,6 +163,7 @@
     width: 10px;
     height: 30px;
     display: flex;
+    
     .Box-slide {
       position: absolute;
       top: 20%;
@@ -166,15 +172,17 @@
       padding: 10px;
       max-width: 550px;
       margin-left: 400px;
+      
       img{
-        width: 500px;
-        height: 300px;
+        width: 450px;
+        height: 250px;
       }
 
     }
   }
   .modal-service-info{
     text-align: center;
+    font-weight: bold;
   }
   .button-fav-group{
     background-color: #234c66;
@@ -191,14 +199,13 @@
     padding: 0 0 15px;
     align-items: center;
     justify-content: center;
-
-  
     tr{
       display: block;
       padding: 8px;
       text-align: center;
-      
+      font-weight: bold;
       justify-content: center;
+      font-size: 23px;
       
     } 
     td {  
@@ -224,25 +231,24 @@
     position:static;
     bottom: 0;
     width: 100%;
-    background-color:black;
+    background-color:rgb(21, 2, 80);
     height: 150px;
-    text-align: center; /* Alinea el contenido al centro si es necesario */
+    left: 30px;
+    text-align: center; 
+    
   }
 .Ubicacion{
   font-size: 13px;
-  margin: 5px 60px;
+  margin: 5px 50px;
   width: 50px;
   height: 50px;
 }
 .ubicacion-icon {
-
-  width: 50px; /* Cambia el ancho a 50px */
-  height: 50px; /* Cambia la altura a 50px */
+  width: 50px; 
+  height: 50px; 
 }
 .texto-blanco {
-  
-  color: white; /* Configura el color del texto en blanco */
-  /* Otros estilos personalizados para el texto en blanco si es necesario */
+  color: white; 
 }
 .Telefono{
 
@@ -263,32 +269,29 @@
   color: white;
 
   svg {
-    
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;  /* Agrega espacio entre elementos SVG */
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;  
 
-    // Estilos adicionales para los elementos svg
     path {
-      fill: white;  // Cambia el color de relleno de los paths
-      stroke: black;  // Cambia el color del borde de los paths
-      stroke-width: 2;  // Cambia el grosor del borde de los paths
+      fill: white;  
+      stroke: black; 
+      stroke-width: 2;
     }
   }
 }
 .Telefono img {
-  width: 50px;
+  width: 40px;
   color: #0056b3;
 }
 
 .Politica{
-  
   margin: -70px 70px;
   text-align: right;
   color: white;
 }
 .Politica img{
-  margin: 0px 40px;
+  margin: 0px 30px;
 }
 
 

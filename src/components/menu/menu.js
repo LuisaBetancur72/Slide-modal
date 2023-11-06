@@ -16,11 +16,6 @@ class Navbar extends Component {
       isIconMode: false, // Estado para controlar el modo de iconos
     };
   }
-
-  handleToggleMenu = () => {
-    this.setState((prevState) => ({ isMenuOpen: !prevState.isMenuOpen }));
-  };
-
   toggleIconMode = () => {
     this.setState((prevState) => ({ isIconMode: !prevState.isIconMode }));
   };
@@ -44,7 +39,9 @@ class Navbar extends Component {
         <div className="navbar-toggle" onClick={this.handleToggleMenu}>
           <i className={`fa ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
         </div>
+        <Link to="/">
         <img src={Logo} alt="Logo UAM" className="logo" />
+        </Link>
         {isIconMode && (
           <div className={`navbar-options-icon-mode ${isMenuOpen ? 'active' : ''}`}>
             <div className="iconM" onClick={this.handleHomeClick}>
@@ -77,7 +74,7 @@ class Navbar extends Component {
         )}
 
             <div className="avatar-container">
-              <Link to="/login" onClick={this.handleToggleMenu} className="login-link" target="_blank">
+              <Link to="/login">
                 <div className='Login'>
                   <p>Login</p>
                 </div>
