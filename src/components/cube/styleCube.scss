@@ -4,54 +4,6 @@
     align-items: center;
     height: 100%;
   
-    .cube {
-      width: 100px;
-      height: 100px;
-      transform-style: preserve-3d;
-      animation: spin 8s infinite linear;
-      position: fixed;
-      bottom: 100px;
-      right: 100px;
-  
-      div {
-        position: absolute;
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-        opacity: 0.8;
-  
-        &.front {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-  
-        &.back {
-          transform: translateZ(50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-  
-        &.top {
-          transform: rotateX(90deg) translateZ(50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-  
-        &.bottom {
-          transform: rotateX(90deg) translateZ(-50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-  
-        &.left {
-          transform: rotateY(90deg) translateZ(50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-  
-        &.right {
-          transform: rotateY(90deg) translateZ(-50px);
-          background: linear-gradient(45deg,rgb(243, 243, 128),rgb(136, 249, 136));
-        }
-      }
-    }
-  
     .cube2 {
       width: 100px;
       height: 100px;

@@ -8,7 +8,7 @@ const flex = () => {
       <div className="content">
         <h1>Insta</h1>
       </div>
-      <div className="footer">
+      <div className="footer1">
         <h1>Hola</h1>
       </div>
     </div>
