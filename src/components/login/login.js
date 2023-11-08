@@ -1,18 +1,21 @@
-import React from 'react'
+import React from 'react';
+import './login.scss';
 
-const flex = () => {
+function Login() {
   return (
-    <div className="container">
-    
-
-      <div className="content">
-        <h1>.</h1>
-      </div>
-      <div className="footer">
-        <h1>Inicio de Sesión</h1>
+    <div className="login-container">
+      <div className="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <label htmlFor="username">Nombre de usuario</label>
+          <input type="text" id="username" />
+          <label htmlFor="password">Contraseña</label>
+          <input type="password" id="password" />
+          <button type="submit">Iniciar Sesión</button>
+        </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default flex
+export default Login;

@@ -16,6 +16,7 @@ import Photo28 from "../../assets/images/oceano.jpg";
 import Photo29 from "../../assets/images/faro.jpg";
 import Photo30 from "../../assets/images/30.jpeg";
 import Logo from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 const settingsRTL = {
   dots: true,
@@ -33,11 +34,11 @@ const settingsRTL = {
 function Home() {
   const post = [
     {
-      Id: "1", title: "dalia",subtitle: "campo de dalias ",description:"científicamente conocidas como Dahlia, son plantas herbáceas perennes que se caracterizan por sus atractivas y variadas flores. Estas flores son originarias de América Central y México",
+      Id: "1", title: "Dalia",subtitle: "Campo de Dalias ",description:"Científicamente conocidas como Dahlia, son plantas herbáceas perennes que se caracterizan por sus atractivas y variadas flores. Estas flores son originarias de América Central y México",
       Create_at: "11/10/23", avatar: Photo27,
     },
     {
-      Id: "2",title: "Oceano",subtitle: "Oceano atlantico ",description:" es el segundo océano más grande del mundo, después del Océano Pacífico. Se extiende entre América al oeste y Europa y África al este,",
+      Id: "2",title: "Oceano",subtitle: "Oceano atlantico ",description:"Es el segundo océano más grande del mundo, después del Océano Pacífico. Se extiende entre América al oeste y Europa y África al este,",
       Create_at: "11/10/23",avatar: Photo28,
     },
     {
@@ -45,7 +46,7 @@ function Home() {
       Create_at: "11/10/23",avatar: Photo29,
     },
     {
-      Id: "4",title: "Atardecer",subtitle: "Atardecer en las playas Tijuana ",description:"ubicadas en Baja California, México, son verdaderamente impresionantes y ofrecen una experiencia única para los visitantes",
+      Id: "4",title: "Atardecer",subtitle: "Atardecer en las Playas Tijuana ",description:"Ubicadas en Baja California, México, son verdaderamente impresionantes y ofrecen una experiencia única para los visitantes",
       Create_at: "11/10/23",avatar: Photo30,
     },
   ];
@@ -55,6 +56,7 @@ function Home() {
   const [cart, setCart] = useState([]);
   const [selectedposts, setSelectedposts] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+
 
   const handleOpenModal = (post, action) => {
     setSelectedposts(post);
@@ -87,7 +89,6 @@ function Home() {
       contactSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <div className="home">
       <Cube />
@@ -151,7 +152,7 @@ function Home() {
             selectedSection === "Contact" ? "active" : ""
           }`}
         >
-          <div className="container">
+          <div className="container1">
             <div className="row">
               <div className="col-md-3 wow fadeInLeft delay-05s">
                 <div className="section-title">
@@ -193,7 +194,7 @@ function Home() {
             selectedSection === "Products" ? "active" : ""
           }`}
         >
-          <div className="container">
+          <div className="container1">
             <div className="row">
               <div className="col-md-3 wow fadeInLeft delay-05s">
                 <div className="section-title">
@@ -228,16 +229,13 @@ function Home() {
             </div>
           </div>
         </section>
-        
-
-
       </div>
 
         
   <div className="footer3">
     <div className="Ubicacion">
       <div class="ubicacion-icon-container">
-        <svg className="ubicacion-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+        <svg className="ubicacion-icon" xmlns="http://www.w3.org/2000/svg" >
             <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06	C24.97,44.6,24.53,45,24,45s-0.97-0.4-1.06-0.94c-0.23-1.47-1.03-4.51-3.77-8.06c-0.42-0.55-0.85-1.12-1.28-1.7L28.24,22l8.33-9.88	C37.49,14.05,38,16.21,38,18.5C38,21.4,37.17,24.09,35.76,26.36z"></path><path fill="#fcc60e" d="M28.24,22L17.89,34.3c-2.82-3.78-5.66-7.94-5.66-7.94h0.01c-0.3-0.48-0.57-0.97-0.8-1.48L19.76,15	c-0.79,0.95-1.26,2.17-1.26,3.5c0,3.04,2.46,5.5,5.5,5.5C25.71,24,27.24,23.22,28.24,22z"></path><path fill="#2c85eb" d="M28.4,4.74l-8.57,10.18L13.27,9.2C15.83,6.02,19.69,4,24,4C25.54,4,27.02,4.26,28.4,4.74z"></path><path fill="#ed5748" d="M19.83,14.92L19.76,15l-8.32,9.88C10.52,22.95,10,20.79,10,18.5c0-3.54,1.23-6.79,3.27-9.3	L19.83,14.92z"></path><path fill="#5695f6" d="M28.24,22c0.79-0.95,1.26-2.17,1.26-3.5c0-3.04-2.46-5.5-5.5-5.5c-1.71,0-3.24,0.78-4.24,2L28.4,4.74	c3.59,1.22,6.53,3.91,8.17,7.38L28.24,22z"></path>
         </svg>
         <a href="https://www.google.com/maps/place/Universidad+Aut%C3%B3noma+de+Manizales/@5.0685718,-75.5037043,16z/data=!4m5!3m4!1s0x8e476f8c1179651b:0x18322787cebd6883!8m2!3d5.0679838!4d-75.5030733?hl=es">Antigua Estación del Ferrocarril</a>
@@ -261,11 +259,11 @@ function Home() {
           <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
         </svg>
       </div>
-
-      <div className="Politica">
-        <p>Politica y Privacidad</p>
+      <div className="Politica">  
+        <Link to="/Politica">Politica y Privacidad</Link>
         <img src={Logo} alt="Logo UAM" className="logo" />
       </div>
+
   </div>
 
      
@@ -308,17 +306,10 @@ function Home() {
           </div>
         </Box>
       </Modal>
-      
-     
-    </div>
-    
-   
-    
+    </div> 
   );
-  
+
 }
-
-
 
 
 export default Home;

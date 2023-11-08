@@ -10,22 +10,16 @@ import Login from './components/login/login';
 import Politica from './components/PoliticayPrivacidad/Politica';
 function App() {
   return (
-    <Router>
-    <Router>   
+    <Router> 
       <div className="App">
         <Menu />
-      </div>
+      </div> 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/facebook" element={<Facebook />} />
-        <Route path="/instagram" element={<Instagram />} />
-        <Route path="/twitter" element={<Twitter />} />
-        <Route path="/login" element={<Login />} /> 
-      </Routes>
           <Route path="/" element={<Home />} />
           <Route path="/facebook" element={<Facebook />} />
           <Route path="/instagram" element={<Instagram />} />
           <Route path="/twitter" element={<Twitter />} />
+          <Route path="/login" element={<Login />} /> 
           <Route path="/politica" element={<Politica />} />
         </Routes>
     </Router>
